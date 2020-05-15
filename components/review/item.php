@@ -2,7 +2,7 @@
     <p class="review-text"><?= $review->review_text; ?></p>
     <div class="rating-row row">
         <div class="col col-md-4">
-            <span class="text-muted"><b>Quality:</b></span>
+            <span class="text-muted"><b><?= lang('igniter.local::default.review.label_quality'); ?>:</b></span>
             <div
                 data-control="star-rating"
                 data-score="<?= $review->quality ?>"
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="col col-md-4">
-            <span class="text-muted"><b>Delivery:</b></span>
+            <span class="text-muted"><b><?= lang('igniter.local::default.review.label_delivery'); ?>:</b></span>
             <div
                 data-control="star-rating"
                 data-score="<?= $review->delivery ?>"
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="col col-md-4">
-            <span class="text-muted"><b>Service:</b></span>
+            <span class="text-muted"><b><?= lang('igniter.local::default.review.label_service'); ?>:</b></span>
             <div
                 data-control="star-rating"
                 data-score="<?= $review->service ?>"
